@@ -1,0 +1,67 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Javascript Calculator</title>
+    <link rel="stylesheet"  type="text/css" href="css/calculator.css" />
+	
+</head>
+<body>
+  <table class="calculator">
+    <thead>
+	  
+       <td colspan="4"><input type="text"  id = "expr" value ="" readonly="readonly"></td>
+	  
+	</thead>
+	<tbody>
+       <tr>    
+          <td><input type="button" value="CE" onclick="clearScreen()"></td>
+          
+          <td><input type="button" value="&larr;" onclick="backspace()"></td>
+		  <td><input type="button" value="(" onclick="enter(this,openParen)"></td>
+		  <td><input type="button" value=")" onclick="enter(this,closeParen)" </td>
+       </tr>
+       <tr>    
+          
+          <td><input type="button" value="7" onclick= "enter(this,seven)"></td>
+          
+          <td><input type="button" value="8" onclick= "enter(this,eight)"></td>
+          
+          <td><input type="button" value="9" onclick=  "enter(this,nine)"></td>
+          
+          <td><input type="button" value="&divide" onclick= "enter(this,divide)"></td>
+       </tr>
+       <tr>   
+          <td><input type="button" value="4" onclick= "enter(this,four)"></td>
+          
+          <td><input type="button" value="5" onclick= "enter(this,five)"></td>
+          
+          <td><input type="button" value="6" onclick= "enter(this,six)"></td>
+          
+          <td><input type="button" value="x" onclick= "enter(this,multiply)"></td>
+       </tr>
+       <tr> 
+          <td><input type="button" value="1" onclick=   "enter(this,one)"></td>
+          
+          <td><input type="button" value="2" onclick=   "enter(this,two)"></td>
+          
+          <td><input type="button" value="3" onclick= "enter(this,three)"></td>
+          
+          <td><input type="button" value="-" onclick=       "enter(this,minus)"></td>
+       </tr>
+       <tr>   
+          <td><input type="button" value="0" onclick=   "enter(this,zero)"></td>
+          
+          <td><input type="button" value="." onclick= "enter(this,decimal)"></td>
+          
+          <td><input type="button" value="=" onclick= "compute()"></td>
+          
+          <td><input type="button" value="+" onclick= "enter(this,plus)"></td>
+       </tr>
+	</tbody>
+	
+  </table>
+  <script type="text/javascript" src = "js/calculator.js">
+    
+  </script>
+</body>
+</html>
